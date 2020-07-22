@@ -26,8 +26,8 @@ function getConfigData(url) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      return data;
+      console.log(data); // works and consols data
+      return data; // returns undefined
     })
     .catch((error) => {
       console.error(error);
