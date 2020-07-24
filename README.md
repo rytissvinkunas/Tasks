@@ -23,4 +23,10 @@ node index.js input.json
 2. index.js - program code
 3. input.json - data file
 
-2020-07-22
+### Runs tests
+
+```bash
+npm test
+```
+
+2020-07-24

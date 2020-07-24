@@ -1,6 +1,5 @@
 const fs = require('fs');
 const currentWeekNumber = require('current-week-number');
-// const axios = require('axios');
 const fetch = require('node-fetch');
 
 const inputFile = process.argv.slice(2);
@@ -120,3 +119,5 @@ function main() {
 }
 
 main();
+
+module.exports = roundFee;
