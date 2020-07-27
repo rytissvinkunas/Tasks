@@ -12,7 +12,7 @@ function inputFileName() {
   }
   return false;
 }
-
+module.exports = inputFileName;
 function inputData(fileName) {
   try {
     return JSON.parse(fs.readFileSync(fileName, 'utf8'));
@@ -54,6 +54,7 @@ function roundFee(fee) {
 
   return parseFloat(fixedFee).toFixed(2);
 }
+module.exports = roundFee;
 
 function calculateCashIn(operationAmount, commissionFee, maxFee) {
   if (operationAmount * commissionFee > maxFee) {
@@ -119,5 +120,3 @@ function main() {
 }
 
 main();
-
-module.exports = roundFee;
